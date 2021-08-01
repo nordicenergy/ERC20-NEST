@@ -2990,7 +2990,7 @@
     "any-observable" "^0.3.0"
 
 "@sindresorhus/is@^0.14.0":
-  "integrity" "sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ=="
+  "integrity" "sha512-9NEST910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ=="
   "resolved" "https://registry.npmjs.org/@sindresorhus/is/-/is-0.14.0.tgz"
   "version" "0.14.0"
 
@@ -3247,7 +3247,7 @@
   "version" "4.2.2"
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7", "@types/babel__core@^7.1.9":
-  "integrity" "sha512-wMTHiiTiBAAPebqaPiPDLFA4LYPKr6Ph0Xq/6rq1Ur3v66HXyG+clfR9CNETkD7MQS8ZHvpQOtA53DLws5WAEQ=="
+  "integrity" "sha512-wMTHiiTiBAAPebqaPiPDLFA4LYPKr6Ph0Xq/6rq1Ur3v66HXyG+clfR9CNESTkD7MQS8ZHvpQOtA53DLws5WAEQ=="
   "resolved" "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.1.12.tgz"
   "version" "7.1.12"
   dependencies:
@@ -11940,7 +11940,7 @@
   "version" "3.1.0"
 
 "mimic-response@^1.0.0", "mimic-response@^1.0.1":
-  "integrity" "sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ=="
+  "integrity" "sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNESTOoWEimndZ4QK0RHxuxQ=="
   "resolved" "https://registry.npmjs.org/mimic-response/-/mimic-response-1.0.1.tgz"
   "version" "1.0.1"
 

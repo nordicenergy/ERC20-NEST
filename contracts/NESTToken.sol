@@ -25,7 +25,7 @@ library SafeMath {
     }
 }
 
-// interface of your Customize token
+// interface of Nordic Energy Swap Token
 interface IERC20{
     
     function totalSupply() external view returns (uint);
@@ -41,7 +41,7 @@ interface IERC20{
 }
 // ----------------------------------------------------------------------------
 // Contract function to receive approval and execute function in one call
-// Borrowed from MiniMeToken
+// Borrowed from Nordic Energy Swap Token
 // ----------------------------------------------------------------------------
 abstract contract ApproveAndCallFallBack {
     function receiveApproval(address from, uint256 tokens, address token, bytes memory data) public virtual;
@@ -50,7 +50,7 @@ abstract contract ApproveAndCallFallBack {
 // ----------------------------------------------------------------------------
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // ----------------------------------------------------------------------------
-contract PAKToken is IERC20 {
+contract NESTToken is IERC20 {
     using SafeMath for uint256;
 
     string public symbol;
@@ -75,11 +75,11 @@ contract PAKToken is IERC20 {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "PKT";
-        name = "Digital Pak Rupee";
-        decimals = 3;
+        symbol = "NEST";
+        name = "Nordic Energy Swap Token";
+        decimals = 10;
         owner = msg.sender;
-        // 100 mill initial supply 
+        // 100 million initial supply 
         _totalSupply = 100000000 * 10**uint(decimals); 
         balances[owner] = _totalSupply;
 		emit Transfer(address(0),owner,_totalSupply);
@@ -171,14 +171,14 @@ contract PAKToken is IERC20 {
         revert();
     }
     // ------------------------------------------------------------------------
-    // Owner can transfer out any accidentally sent RTBN tokens
+    // Owner can transfer out any accidentally sent NEST tokens
     // ------------------------------------------------------------------------
     function transferAnyERC20Token(address tokenAddress, uint256 tokens) public onlyOwner returns (bool success) {
         return IERC20(tokenAddress).transfer(owner, tokens);
     }
     
     // ------------------------------------------------------------------------
-    // Owner can transfer out any accidentally sent RTBN tokens
+    // Owner can transfer out any accidentally sent NEST tokens
     // ------------------------------------------------------------------------
     function transferReserveToken(address tokenAddress, uint256 tokens) public onlyOwner returns (bool success) {
         return this.transferFrom(owner,tokenAddress, tokens);

@@ -19,7 +19,7 @@
  */
 
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const infuraKey = "247d9f8c517449ad9a097923dcd007bd";
+const infuraKey = "bdb81f91184c43dcb72fe2c5155cdd17";
 
 const fs = require("fs");
 const mnemonic = fs.readFileSync(".secret").toString().trim();
@@ -62,7 +62,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider(
           mnemonic,
-          `https://ropsten.infura.io/v3/ff5964fc8ce94dc0b44cd1c5d071ce21`
+          `https://ropsten.infura.io/v3/bdb81f91184c43dcb72fe2c5155cdd17`
         ),
       network_id: 3, // Ropsten's id
       gas: 5500000, // Ropsten has a lower block limit than mainnet
